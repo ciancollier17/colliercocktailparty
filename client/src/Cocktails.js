@@ -4,20 +4,20 @@ const cocktails = [
     ingredients: ["Vodka", "Kahlua", "Ice", "Espresso", "Finished With Coffee Beans"]
   },
   {
-    name: "B52",
-    ingredients: ["Kahlua", "Baileys", "Grand Marnier"]
+    name: "Classic Snowball",
+    ingredients: ["Advocat", "Lemonade", "Garnished with a Maraschino Cherry"]
   },
   {
-    name: "Mojito",
-    ingredients: ["White Rum", "Crushed Ice", "Sugar", "Lime Juice", "Mint"]
+    name: "Bramble Royale",
+    ingredients: ["Bramble Gin", "Prosecco", "Blackberries"]
   },
   {
-    name: "Moscow Mule",
-    ingredients: ["Vodka", "Ginger", "Lime Juice", "Ice"]
+    name: "Woo Woo",
+    ingredients: ["Vodka", "Peach Schnapps", "Cranberry Juice", "Lime Juice"]
   },
   {
-    name: "Tequila Sunrise",
-    ingredients: ["Tequila", "Orange Juice", "Grenadine Syrup", "Decorated With An Orange Slice, Cherry and Umbrella"]
+    name: "Bourbon Old Fashioned",
+    ingredients: ["Bourbon", "Angostura Bitters", "Club Soda"]
   }
 ];
 
