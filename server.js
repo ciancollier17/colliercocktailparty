@@ -61,7 +61,7 @@ app.post('/api/add', (req, res) => {
     console.log(err);
   });
 
-  let transporter = nodemailer.createTransport({
+  /*let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: process.env.EMAIL_FROM,
@@ -83,7 +83,7 @@ app.post('/api/add', (req, res) => {
     else {
       console.log("Email sent!");
     }
-  });
+  });*/
 
   res.send(200);
 });
