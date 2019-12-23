@@ -18,6 +18,10 @@ const cocktails = [
   {
     name: "Bourbon Old Fashioned",
     ingredients: ["Bourbon", "Angostura Bitters", "Club Soda"]
+  },
+  {
+    name: "Mystery",
+    ingredients: ["For those feeling brave, ????, ????"]
   }
 ];
 

@@ -18,6 +18,42 @@ mongoose.Promise = global.Promise;
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
+app.get('/api/getorders', (req, res) => {
+  Order.find((err, results) => {
+    if (!err) {
+      res.send(results);
+    } else {
+      res.send(err);
+    }
+  })
+});
+
+app.post('/api/getneworders', (req, res) => {
+  if (req.body.last_order) {
+    console.log("run");
+    Order.find((err, results) => {
+      if (!err) {
+        let response = [];
+        let sending = false;
+
+        for (let i = 0; i < results.length; i++) {
+          if (sending) {
+            response.push(results[i]);
+          }
+
+          if (results[i]._id == req.body.last_order._id) {
+            sending = true;
+          }
+        }
+
+        res.send(response);
+      }
+    })
+  } else {
+    res.send([]);
+  }
+})
+
 app.post('/api/add', (req, res) => {
   console.log("recieved");
   let item = new Order({cocktail: req.body.order, name: req.body.name});
